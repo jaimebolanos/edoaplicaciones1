@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+<p align="center">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=sí config=sí inicio=sí limpiar=sí ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' O.x='-400' O.y='180' despl_imagen='arr-izq' fondo='fddaff' red='grisClaro' red10='gris' ejes='grisObscuro' texto='405860' números='sí' eje-x='Tiempo (horas)' eje-y='N(t)'">
+   <param name="E_02" value="tipo='R2' id='E2' x='600' ancho='400' alto='300' despl_imagen='arr-izq' fondo='8091ff' red='no' red10='no' ejes='no' texto='405860'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+</ajs></p>
+
+</body>
+</html>

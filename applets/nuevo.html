@@ -1,0 +1,39 @@
+<script type='text/javascript' src='http://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js'></script>
+<ajs name="Descartes" width="700" height="500" code="Descartes" class="DescartesJS">
+   <param name="tamaño" value="700x500">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.327, 2014-11-17">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no">
+   <param name="E_01" value="tipo='R2' escala='30' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='b' tipo='numérico' nombre='Escala eje-x' valor='1' incr='1' min='1' decimales='0' fijo='no' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="id='a' tipo='numérico' nombre='Escala eje-y' valor='1' incr='1' min='1' decimales='0' fijo='no' visible='si' pos_mensajes='centro'">
+   <param name="C_03" value="id='escala' tipo='numérico' valor='30' min='0.001' decimales='4*(escala<10)' pos_mensajes='centro'">
+   <param name="C_04" value="id='Ox' tipo='numérico' incr='50*b' pos_mensajes='centro'">
+   <param name="C_05" value="id='Oy' tipo='numérico' incr='50*a' pos_mensajes='centro'">
+   <param name="C_06" value="id='px' tipo='numérico' interfaz='campo de texto' nombre='Escoger x' valor='2' visible='si' acción='calcular' parámetro='evento=1' pos_mensajes='centro'">
+   <param name="C_07" value="id='num' tipo='numérico' interfaz='botón' región='norte' nombre='Ver-Ocultar números' valor='1' visible='si' acción='calcular' parámetro='n=1-n' pos_mensajes='centro'">
+   <param name="C_08" value="id='Centrar' tipo='numérico' interfaz='botón' nombre=' y centrar en (x,f)' visible='si' acción='calcular' parámetro='Ox=-g.x*escala;Oy=g.y*escala' pos_mensajes='centro'">
+   <param name="A_01" value="id='w' constante='si' expresión='700' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='h' constante='si' expresión='500' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='f' expresión='0.5*x^2' editable='si'">
+   <param name="A_04" value="id='f(x)' algoritmo='si' expresión='a*f' algoritmo='si'">
+   <param name="A_05" value="id='f1' expresión='f(x/b)'">
+   <param name="A_06" value="id='ma' constante='si' expresión='1+ent(29/a/escala)' evaluar='siempre'">
+   <param name="A_07" value="id='mb' constante='si' expresión='1+ent(29/b/escala)' evaluar='siempre'">
+   <param name="A_08" value="id='explica escoger x' evento='sí' condición='evento=1' acción='mensaje' parámetro='Pulsar el botón ``ycentrar en (x,f)`` cuando se desee ver el punto en el centro de la escena. \nLa utilización conjunta de estos dos controles nos permitirá localizar puntos de la gráfica.\n_____________________________________' parámetro.fuente='Helvetica,PLAIN,12' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_09" value="id='g.x' constante='si' expresión='px*b' evaluar='siempre'">
+   <param name="A_10" value="id='g.y' constante='si' expresión='f(px)' evaluar='siempre'">
+   <param name="G_01" value="tipo='ecuación' color='grisObscuro' expresión='y=0'">
+   <param name="G_02" value="tipo='ecuación' color='grisObscuro' expresión='x=0'">
+   <param name="G_03" value="tipo='ecuación' color='grisClaro' dibujar-si='s#0' expresión='y=s*a' familia='s' s.intervalo='[-(ent(h/2/escala)+1)+ent(Oy/(a*escala)),(ent(h/2/escala)+1)+ent(Oy/(a*escala))]' s.pasos='(ent(h/2/escala)+1)*2'">
+   <param name="G_04" value="tipo='ecuación' color='grisClaro' dibujar-si='s#0' expresión='x=b*s' familia='s' s.intervalo='[-(ent(w/2/escala)+1)-ent(Ox/(b*escala)),(ent(w/2/escala)+1)-ent(Ox/(b*escala))]' s.pasos='(ent(w/2/escala)+1)*2'">
+   <param name="G_05" value="tipo='ecuación' color='azul' expresión='y=f1' ancho='2'">
+   <param name="G_06" value="tipo='punto' color='grisObscuro' dibujar-si='n=0' expresión='(0,a*s*ma)' familia='s' s.intervalo='[-(ent(h/2/escala)+1)+ent(Oy/(a*ma*escala)),(ent(h/2/escala)+1)+ent(Oy/(a*ma*escala))]' s.pasos='(ent(h/2/escala)+1)*2' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs24{\*\mjaformula\f0\fs24{\expr s*ma\decimals 0\fixed0}}\f0\fs24\par}' fuente='SansSerif,PLAIN,12' tamaño='0'">
+   <param name="G_07" value="tipo='punto' color='grisObscuro' dibujar-si='n=0' expresión='(b*s*mb,0)' familia='s' s.intervalo='[-(ent(w/2/escala)+1)-ent(Ox/(b*mb*escala)),(ent(w/2/escala)+1)-ent(Ox/(b*mb*escala))]' s.pasos='(ent(w/2/escala)+1)*2' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs24{\*\mjaformula\f0\fs24{\expr s*mb\decimals 0\fixed0}}\f0\fs24\par}' fuente='SansSerif,PLAIN,12' tamaño='0'">
+   <param name="G_08" value="tipo='punto' color='rojo' expresión='(g.x,g.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b P\b0 ({\*\mjaformula{\expr g.x/b}}{\*\mjaformula ,{\expr g.y/a}})\cf1\f0\fs24\par}' tamaño='4'">
+</ajs>

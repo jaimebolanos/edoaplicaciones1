@@ -1,0 +1,28 @@
+<applet name="Descartes" width=970 height=550 code="Descartes">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="_jnlp_path_lib/Descartes5.jnlp">
+   <param name="tamaño" value="970x550">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=sí config=sí inicio=sí limpiar=sí ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' escala='0.6' O.x='-400' O.y='200' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='grisObscuro' texto='no' números='sí'">
+   <param name="C_01" value="id='v1' tipo='numérico' espacio='E1' nombre='v1' valor='9' min='0' decimales='1' fijo='sí' visible='sí'">
+   <param name="C_02" value="id='v2' tipo='numérico' espacio='E1' nombre='v2' valor='7' min='0' decimales='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_03" value="id='c1' tipo='numérico' espacio='E1' nombre='c1' valor='5' min='0' decimales='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='m0' tipo='numérico' espacio='E1' nombre='m0' valor='500' min='0' decimales='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='v0' tipo='numérico' espacio='E1' nombre='v0' valor='25' min='0' decimales='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='k' expresión='(m0-c1*v0)*v0^(v2/(v1-v2))'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='k&gt;=0.01' expresión='[20,20]' texto='k=[k]' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='k&lt;0.01' expresión='[20,20]' texto='k=[k]' decimales='6' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='ecuación' expresión='y=c1*(v0+(v1-v2)*x)+k/(v0+(v1-v2)*x)^(v2/(v1-v2))' ancho='10'">
+_no_Java_</applet>

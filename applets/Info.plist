@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>AllowNetworkAccess</key>
+        <true/>
+        <key>BackwardsCompatibleClassLookup</key>
+        <true/>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>English</string>
+        <key>CFBundleDisplayName</key>
+        <string>Ley de Enfriamiento de Newton</string>
+        <key>CFBundleIdentifier</key>
+        <string>Ley de Enfriamiento de Newton</string>
+        <key>CFBundleName</key>
+        <string>Ley de Enfriamiento de Newton</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.0</string>
+        <key>CFBundleVersion</key>
+        <string>1.0</string>
+        <key>CloseBoxInsetX</key>
+        <integer>15</integer>
+        <key>CloseBoxInsetY</key>
+        <integer>15</integer>
+        <key>Height</key>
+        <integer>584</integer>
+        <key>MainHTML</key>
+        <string>material-59748.html</string>
+        <key>Width</key>
+        <integer>1382</integer>
+    </dict>
+</plist>

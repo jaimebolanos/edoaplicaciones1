@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>Diseño con frames 1</title>
+</head>
+<frameset rows="20%,*">
+   <frame src="menus.html" />
+   
+</frameset>
+</html>
